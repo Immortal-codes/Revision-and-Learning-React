@@ -2,7 +2,8 @@ import "./App.css";
 import Greeting from "./components/Greeting";
 import ProfileCard from "./components/ProfileCard";
 import ProductList from "./components/ProductList";
-
+import CounterApp from "./components/CounterApp";
+import DarkModeToggle from "./components/Theme";
 function App() {
   const products = [
     { id: 1, name: "iPhone 15", price: 999 },
@@ -19,6 +20,9 @@ function App() {
         bio="Frontend Developer"
       />
       <ProductList items={products} />
+
+      <CounterApp />
+      <DarkModeToggle />
     </>
   );
 }
